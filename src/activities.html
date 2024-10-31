@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Activity Diary</title>
+    <link rel="stylesheet" href="activities.css">
+    <script src="activities.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+          <img src="images/logo.png" alt="Logo" class="logo">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="activities.html">Activities</a></li>
+          </ul>
+        </nav>
+        <div class="header-title">
+        <h1>Activities</h1>
+        <p>Discover, Plan, and Enjoy Your Next Adventure.</p>
+      </div>
+      </header>
+<div class="activityForm">
+    <!-- Form to add new activity -->
+    <div class="activityForm">
+        <h2>New Activity</h2>
+        <form id="activityForm">
+            <input type="text" id="activityTitle" placeholder="Activity Title" required>
+            <textarea id="activityDescription" placeholder="Description" required></textarea>
+            <input type="date" id="activityDate" required>
+            <input type="text" id="activityLocation" placeholder="Location" required>
+            <button type="submit">Add Activity</button>
+        </form>
+    </div>
+    <!-- Display created activities -->
+    <div class="activity-card">
+        <h2>Activity Planner Check</h2>
+        <div id="activitiesContainer">
+            <!-- Activity cards will be dynamically displayed here -->
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-content">
+        <div>
+            <h3>About Us</h3>
+            <p>Your one-stop platform for discovering exciting activities based on the weather! Explore ideas to match every day.</p>
+        </div>
+        <div>
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="activities.html">Activities</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <p>Email: recactivities@gmail.com</p>
+            <p>Phone: +123-456-7890</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 RecActivities | All rights reserved.
+    </div>
+</footer>
+</body>
+</html>

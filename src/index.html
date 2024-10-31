@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outdoor Weather Recommendations</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="images/logo.png" alt="Logo" class="logo">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="activities.html">Activities</a></li>
+      </ul>
+    </nav>
+    <div class="header-title">
+    <h1>Explore the Outdoors</h1>
+    <p>Get real-time weather-based recommendations for your favorite outdoor activities!</p>
+  </div>
+  </header>
+
+  <section id="search">
+    <form id="location-form">
+      <input type="text" id="location-input" placeholder="Enter location (e.g., London)" required>
+      <button type="submit">Search</button>
+    </form>
+  </section>
+
+  <section id="weather-summary">
+    <h2>Current Weather in <span id="location-name"></span></h2>
+    <div class="weather-details">
+      <img id="current-icon" alt="Current weather icon">
+      <p>Temperature: <span id="temperature"></span>°C</p>
+      <p>Forecast Temp: <span id="forecast-temp"></span>°C</p>
+      <p>Weather Condition: <span id="condition"></span></p>
+      <p>Wind Speed: <span id="wind-speed"></span> km/h</p>
+      <p>Humidity: <span id="humidity"></span>%</p>
+      <p>Chance of Rain: <span id="rain-chance"></span>%</p>
+      <p>Local Time: <span id="local-time"></span></p>
+    </div>
+  </section>
+
+  <section id="next-day-forecast">
+    <h2>Upcoming Weekly Forecast</h2>
+    <div id="weekly-forecast-container"></div>
+    <button id="back-button">Back</button>
+    <button id="next-day-button">Next Day</button>
+  </section>
+
+  <section id="next-day-forecast">
+    <h2>Next Day Forecast</h2>
+    <div class="forecast-details">
+      <img id="next-day-icon" alt="Next day weather icon">
+      <p>Temperature: <span id="next-day-temp"></span>°C</p>
+      <p>Weather Condition: <span id="next-day-condition"></span></p>
+      <p>Chance of Rain: <span id="next-day-rain"></span>%</p>
+    </div>
+  </section>
+
+  <section id="recommendations">
+    <h2>Recommended Activities</h2>
+    <div id="activity-container"></div>
+  </section>
+
+  <section id="checklist">
+    <h2>Activity Equipment Checklist</h2>
+    <div id="checklist-container"></div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div>
+        <h3>About Us</h3>
+        <p>Your one-stop platform for discovering exciting activities based on the weather! Explore ideas to match every day.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="activities.html">Activities</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Email: recactivities@gmail.com</p>
+        <p>Phone: +123-456-7890</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2024 RecActivities | All rights reserved.
+    </div>
+  </footer>
+  
+</body>
+</html>
